@@ -42,7 +42,7 @@ $(function() {
                 } else {
                     // console.log('注册成功')
                     layer.msg('注册成功，请登录');
-                    $('#link_log'), click();
+                    $('#link_login').click();
                 }
             })
             // console.log('ok')

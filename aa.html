@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            width: 900px;
+            height: 900px;
+            margin: auto;
+        }
+        
+        .transparent {
+            background-color: black;
+        }
+        
+        .mask {
+            position: absolute;
+            width: 900px;
+            height: 900px;
+            background-color: black;
+            opacity: 0.5;
+        }
+        
+        .light {
+            position: absolute;
+            top: 450px;
+            width: 450px;
+            height: 450px;
+            /* background-color: #fff; */
+            background-image: url(/assets/images/sample.jpg);
+            background-position: 0 450px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="transparent">
+        <div class="mask">1234</div>
+        <div class="light"></div>
+        <img src="/assets/images/sample.jpg" alt="">
+
+    </div>
+</body>
+
+</html>

@@ -59,14 +59,17 @@ function getUserInfo() {
 function renderAvatar(user) {
     var name = user.nickname || user.username;
     $('#welcome').html('欢迎&nbsp;&nbsp;' + name);
-    //渲染用户头像
+    console.log('123')
+        //渲染用户头像
     if (user.user_pic !== null) {
         $('.layui-nav-img').attr('src', user.user_pic).show;
-        $('text-avatar').hide();
+        $('.text-avatar').hide();
+        console.log('234')
     } else {
         $('.layui-nav-img').hide();
         var first = name[0].toUpperCase();
         console.log(first)
         $('.text-avatar').html(first).show();
+        console.log('567')
     }
 }
